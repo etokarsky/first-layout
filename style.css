@@ -1,0 +1,180 @@
+/* reset */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family:inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+/* reset */
+
+body {
+    background: #e8e8e8 url('files/bg.png') no-repeat 195px 105px;
+}
+
+.content {
+    padding: 153px 0 137px;
+    max-width: 841px;
+    margin: 0px auto;
+}
+
+.content-top {
+    text-align: center;
+    margin: 0 0 66px 0px;
+}
+.content-top__category {
+    color: #748187;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+}
+.content-top__title {
+    color: #273d46;
+    font-size: 36px;
+    line-height: 50px;
+    max-width: 725px;
+    margin: 0px auto;
+}
+
+.content__image {
+    box-shadow: 0 15px 65px rgba(15, 16, 16, 0.15);
+    background-color: #fff;
+    padding: 10px;
+    margin: 0 0 88px 0;
+}
+.content__image img {
+    max-width: 100%;
+    /* ограничиваем ширину DIV для изображения, чтобы в случае вставки нового изображения
+    с бОльшим разрешением не поломалась вёрстка */
+}
+
+.content-bottom {
+    padding: 0px 45px;
+}
+
+.content-bottom__text {
+    color: #53646b;
+    font-size: 24px;
+    line-height: 40px;
+    margin: 0 0 40px 0;
+}
+.content-bottom__text p {
+    margin: 0 0 41px 0;
+}
+.content-bottom__text p:last-child {
+    margin: 0;
+}
+
+.content-bottom-info-list {
+    margin: 0 0 47px 0;
+}
+.content-bottom-info-list li {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    background: url('files/check.png') no-repeat left;
+    padding: 0 0 0 36px;
+}
+.content-bottom-info-list li:nth-child(1) {
+    color: #273d46;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+.content-bottom-info-list li:nth-child(2) {
+    color: #80b7b3;
+    font-style: italic;
+}
+.content-bottom-info-list li:nth-child(3) {
+    color: #273d46;
+    font-weight: 700;
+}
+.content-bottom-info-list li:nth-child(4) {
+    color: #aeb5b7;
+    text-decoration: line-through;
+}
+.content-bottom-info__link {
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    /* height === line-height для того, чтобы выровнять текст в ссылке-кнопке по центру.
+    В оригинале Avocode line-height равен 40px, но в этом случае текст смещается чуть вверх. */
+    padding: 0 30px;
+    background: #80b7b3;
+    border-radius: 20px;
+    box-shadow: 0 6px 40px rgba(128, 183, 179, 0.54);
+    color: #ffffff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+}
+.content-bottom-info__link span {
+    background: url('files/arrow.png') no-repeat right;
+    /* видим кнопку или ссылку со значком-иконкой — вставляем внутрь SPAN и
+    применяем к нему свойство background */
+    padding: 0 29px 0 0;
+}
